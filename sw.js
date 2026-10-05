@@ -2,32 +2,31 @@
  * Keeps a copy of the app's own files on this device, so the app opens
  * without a connection. It only ever handles requests for the app's own
  * files: nothing is sent or fetched anywhere else. */
-const VERSION = "3ab44ff5c209";
+const VERSION = "75ffadc4bc9a";
 // The folder is part of the name, so two copies of the app on one site keep their files apart.
 const PREFIX = 'chunk-reader-' + tag(new URL(self.registration.scope).pathname) + '-';
 const CACHE = PREFIX + VERSION;
 const FILES = [
  "./assets/atkinson-hyperlegible-latin-400-normal-BrHNak5F.woff2",
  "./assets/atkinson-hyperlegible-latin-ext-400-normal-DRk46D-x.woff2",
- "./assets/epub-DB0_PR4z.js",
+ "./assets/epub-CM5mLgey.js",
  "./assets/index-BXFCsfLk.css",
- "./assets/index-Cr8QGGGt.js",
+ "./assets/index-CU0RouDg.js",
  "./assets/literata-latin-400-normal-CLtNJ872.woff2",
  "./assets/literata-latin-ext-400-normal-D5BsCrMl.woff2",
- "./assets/pdf-B4xTgNxR.js",
- "./assets/pdf-CPLwuKBH.js",
+ "./assets/pdf-DWy_8APK.js",
+ "./assets/pdf-Y_Fww-wx.js",
  "./assets/pdfWorker-Cq4AOvP2.js",
  "./assets/pdfWorker-DrRiuNVY.js",
  "./icons/apple-touch-icon.png",
  "./icons/icon-192.png",
  "./icons/icon-512.png",
- "./icons/icon.svg",
  "./",
  "./licenses.txt",
  "./manifest.webmanifest"
 ];
 // What the start page of this version loads. A start page that names other files is an older copy.
-const ENTRY = ["assets/index-Cr8QGGGt.js","assets/index-BXFCsfLk.css"];
+const ENTRY = ["assets/index-CU0RouDg.js","assets/index-BXFCsfLk.css"];
 
 function tag(text) {
   let h = 5381;

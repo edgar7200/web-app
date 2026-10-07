@@ -2,20 +2,20 @@
  * Keeps a copy of the app's own files on this device, so the app opens
  * without a connection. It only ever handles requests for the app's own
  * files: nothing is sent or fetched anywhere else. */
-const VERSION = "2c78550e28ab";
+const VERSION = "8a91ce81df8f";
 // The folder is part of the name, so two copies of the app on one site keep their files apart.
 const PREFIX = 'chunk-reader-' + tag(new URL(self.registration.scope).pathname) + '-';
 const CACHE = PREFIX + VERSION;
 const FILES = [
  "./assets/atkinson-hyperlegible-latin-400-normal-BrHNak5F.woff2",
  "./assets/atkinson-hyperlegible-latin-ext-400-normal-DRk46D-x.woff2",
- "./assets/epub-Dr1txeLl.js",
- "./assets/index-B5hOLVTR.css",
- "./assets/index-RZQXWasb.js",
+ "./assets/epub-Zll2mdcH.js",
+ "./assets/index-Csv87a5x.js",
+ "./assets/index-uSQLFL92.css",
  "./assets/literata-latin-400-normal-CLtNJ872.woff2",
  "./assets/literata-latin-ext-400-normal-D5BsCrMl.woff2",
- "./assets/pdf-CbJK6fiR.js",
- "./assets/pdf-Crt4Nm8b.js",
+ "./assets/pdf-CPKaLhCt.js",
+ "./assets/pdf-Cr59J4Y6.js",
  "./assets/pdfWorker-Cq4AOvP2.js",
  "./assets/pdfWorker-DrRiuNVY.js",
  "./icons/apple-touch-icon.png",
@@ -26,7 +26,7 @@ const FILES = [
  "./manifest.webmanifest"
 ];
 // What the start page of this version loads. A start page that names other files is an older copy.
-const ENTRY = ["assets/index-RZQXWasb.js","assets/index-B5hOLVTR.css"];
+const ENTRY = ["assets/index-Csv87a5x.js","assets/index-uSQLFL92.css"];
 
 function tag(text) {
   let h = 5381;
